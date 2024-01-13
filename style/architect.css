@@ -56,11 +56,115 @@ nav li a{
     margin-top: 20px;
     width: 100%;
 }
+
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
+.teams-container{
+    display: flex;
+    align-items: center;
+}
+.teams-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.teams-content{
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.teams-titles{
+    font-size: 3rem;
+    
+}
+.quick{
+    color: gray;
+}
+.features-color{
+    color: #FF900E;
+}
+.features{
+    margin-top: 130px;
+    display: flex;
+    gap: 120px;
+}
+.features .nav--title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.feature-content .card{
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0,0,0,0.06);
+}
+.feature-img img{
+    height: 90%;
+    margin-left: 90px;
+}
+.ten-years{
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 342px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+}
+.ten-years h2{
+    font-size: 4rem;
+    margin: 0;
+}
+.ten-years p{
+    font-size: 16px;
+}
+.facts-card{
+    display: flex;
+    justify-content: space-around;
+}
+.facts-card .card{
+    border-radius: 8px;
+    border: 1px solid #FF900E;
+    text-align: center;
+    font-size: 2.8rem;
+    padding: 30px;
+    
+}
+.card-title{
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 5px;
+
+}
+.card-starts{
+    font-weight: 2.8rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.sponsors{
+    text-align: center;
+}
+.sponsors-img-container{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+.sponsors-img-container img{
+    width: 165px;
+}
 @media screen  and (max-width: 576px){
     header{
         padding: 20px;
     }
-    nav{
+    nav, .teams-container, .facts-card,
+    .sponsors-img-container{
         flex-direction: column;
     }
 }
@@ -68,7 +172,8 @@ nav li a{
     header{
         padding: 50px;
     }
-    nav{
+    nav, .teams-container, .facts-card,
+    .sponsors-img-container{
         flex-direction: column;
     }
 }
